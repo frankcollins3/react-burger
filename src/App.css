@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+* {
+  list-style-type: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.Main-App-Wrapp {
   min-height: 100vh;
+  min-width: 100vh;
+  background-color: rgb(240, 225, 197);
+}
+
+.Column-Center-Center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column nowrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;  
 }
 
-.App-link {
-  color: #61dafb;
+.Row-Center {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Component-Wrapper {
+  background-image: url('/public/img/menu.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+    
+  margin: 0 10.5em 0 10.5em;
+  min-height: 60vh;
+  min-width: 45vh;
 }
+
+#Bag {
+  background-image: url('/public/img/bag.png')
+}
+
+.Hidden {
+  display: none;
+}
+
+
+/* ** INGREDIENTS.jS */
+
+.Ingredients-Wrapp {
+       text-align: center;
+       /* line-height: 2em; */
+}
+
+.Burger-Button {  
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;      
+  border: 2px solid rgb(162, 174, 187);
+  transform: scale(1.25);
+  margin: 0 3em 0 3em;
+}
+
+#Bread {
+  background-image: url('/public/img/bread.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Condiment {
+  background-image: url("/public/img/mustard.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#Beef {
+  background-image: url('/public/img/beef.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.Button-Wrapper {
+  position: relative;
+  top: -3em;
+}
+
+
+.Button-Animation {
+       animation: Fake-Boop 5s infinite;
+}
+
+     @keyframes Fake-Boop {
+       0% {
+        
+       }
+       10% {
+         transform: rotate(5deg)
+       }
+       20% {
+         transform: rotate(-5deg)
+       }
+       30% {
+         transform: rotate(3deg)
+       }
+       40% {
+         transform: rotate(-3deg)
+       }
+       45% {
+         transform: rotate(-5deg)
+       }
+       50% {
+         transform: rotate(5deg)
+       }
+       75% {
+         transform: rotate(-15deg)
+       }
+       100% {
+         transform: rotate(15deg)
+       }
+     }
+.Ingredient-Ul {
+  line-height: 3.25em;
+  position: relative;
+  left: -1em;
+}
+
+.Ingredient-Li {
+  font-weight: bold;
+  color: rgb(162, 174, 187);
+  position: relative;
+  left: -1.1em;
+  line-height: 2.25em;
+}
+
+#IngredientInput {
+       border: 2px solid rgb(162, 174, 187);
+}
+    
+#Salt-Submit {
+       margin-top: 2em;
+       background-image: url("/pu ic/img/salt.png");
+       background-size: cover;
+       background-repeat: no-repeat;
+       height: 50px;
+       width: 50px;
+       color: transparent;
+       border: transparent;
+       border-radius: 50%;
+}
+
+/* ** INGREDIENTS.jS */
+
+
+/* ? BURGER.JS!!!! */
+.Burger-Ul {
+  text-align: center;
+  display: flex;
+  /* flex-flow: row nowrap;       */
+  flex-flow: column nowrap;
+  /* secret column */
+  justify-content: center;
+  margin: 0.5em;
+  /* align-items: center; */
+}
+
+
+
+#Burger-Material {
+  padding: 0;
+  line-height: -500px;
+  margin: 0;
+  /* height: 30px; */
+  /* width: 30px; */
+  /* padding: 0; */
+  position: relative;
+  left: -1.25em;
+  /* color: transparent; */
+}
+/* 
+.Double-Stack {
+  transform: scale(2.0);
+}
+
+.Triple-Stack {
+  transform: scale(3.0);
+  
+  */
+  /* ? BURGER.JS!!!! */
